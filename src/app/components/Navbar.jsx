@@ -1,25 +1,69 @@
+"use client";
+
 import Link from "next/link";
-import navbar from "@/app/styles/Navbar.module.css"
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
+import navbar from "@/app/styles/Navbar.module.css";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
-    return (
-        <nav className={`${navbar.border} border-b-2 p-5`}>
-            <div>
-                
-                <ul className="flex justify-end space-x-10">
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Education</li> 
-                    <li>Experiences</li> 
-                    <li>Contacts</li> 
-                    <li><FaGithub className="text-2xl pl"/></li>
-                    <li><FaLinkedin className="text-2xl"/></li>
-                </ul>
-            </div>
-        </nav>
-    )
-}
+  const pathname = usePathname();
+  const minimalNavbar = pathname === "/ProjectsPage";
+
+  return (
+    <nav id="Top" className={`flex-row hidden md:flex justify-between ${navbar.border} p-5 items-center`}>
+      <div className="flex items-center">
+        <Image
+          src={"/icons/navbar-icon.svg"}
+          width={40}
+          height={40}
+          alt="Navbar icon"
+        ></Image>
+        <h1 className="font-bold ml-2">WELCOME!</h1>
+      </div>
+      <div>
+        <ul className="flex justify-end space-x-10 mr-6">
+          {pathname === "/" ? (
+            <li className="underline underline-offset-8 opacity-60 transition">
+              <Link href={"/"}>Home</Link>
+            </li>
+          ) : (
+            <li className="hover:opacity-60 transition">
+              <Link href={"/"}>Home</Link>
+            </li>
+          )}
+
+          {!minimalNavbar && (
+            <>
+              <li className="hover:opacity-60 transition">
+                <Link href={"#About"}>About</Link>
+              </li>
+              <li className="hover:opacity-60 transition">
+                <Link href={"#Skills"}>Skills</Link>
+              </li>
+              <li className="hover:opacity-60 transition">
+                <Link href={"#Experience"}>Experiences</Link>
+              </li>
+            </>
+          )}
+          {pathname === "/ProjectsPage" ? (
+            <li className="underline underline-offset-8 opacity-60 transition">
+              <Link href={"/ProjectsPage"}>Projects</Link>
+            </li>
+          ) : (
+            <li className="hover:opacity-60 transition">
+              <Link href={"/ProjectsPage"}>Projects</Link>
+            </li>
+          )}
+
+          {!minimalNavbar && (
+            <li className="hover:opacity-60 transition">
+              <Link href={"#Contact"}>Contact</Link>
+            </li>
+          )}
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
