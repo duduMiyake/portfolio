@@ -73,7 +73,7 @@ const Experience = () => {
         <ul className="md:hidden p-4 font-bold">
           {experiences.map((experience, index) => {
             return (
-              <li className={`py-3 px-4 mb-12 ease-in-out rounded-md`}>
+              <li key={index} className={`py-3 px-4 mb-12 ease-in-out rounded-md`}>
                 <p className="text-2xl mr-4">{experience.title}</p>
                 <p className="text-base opacity-75">{experience.date}</p>
                 <p className="text-lg leading-relaxed mt-4 font-medium">{experience.description}</p>
