@@ -20,7 +20,7 @@
     "projects_secondary_page": [
         {
             "src": "/projects-image/Garras-do-destino.png",
-            "link": "/Projects/Garras",
+            "link": "https://github.com/LeoMarques1206/unity-biomas",
             "title": "Claws of destiny",
             "description": "Project developed in Unity using C#, in collaboration with two other team members, for an educational game that teaches about various Brazilian biomes.",
             "tech": "Unity, C#, Github, Github Desktop",
@@ -65,7 +65,7 @@
             "hasPage": false
           },
           {
-            "src": "/projects-image/lexical-sintaxy.jpeg",
+            "src": "/projects-image/lexical-sintaxy.png",
             "link": "https://github.com/duduMiyake/lexical_Syntactic_Analyzer",
             "title": "Lexical Syntatic Analyser",
             "description": "This project involves creating a Lexical and Syntactic Analyzer to process input strings into tokens and validate their syntactic structure based on a defined grammar. Key learnings include understanding lexical and syntactic analysis, implementing token classification, constructing parse trees, and handling errors gracefully",

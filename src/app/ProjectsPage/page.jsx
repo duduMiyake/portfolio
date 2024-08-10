@@ -1,36 +1,39 @@
-"use client"
+"use client";
 
 import Section from "@/app/ProjectsPage/structure/Section";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function HomeProjects() {
-
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const fetchData = async() => {
-      const res = await fetch('/data/data.json')
+    const fetchData = async () => {
+      const res = await fetch("/data/data.json");
       const data = await res.json();
       setProjects(data.projects_secondary_page);
     };
     fetchData();
-  })
+  });
 
   return (
     <div className="flex flex-col pb-10">
-      <div className="flex flex-col place-content-center mx-4 mt-4 p-4 h-full">
+      <div className="flex flex-col place-content-center mx-0 md:mx-4 md:p-4 h-full">
         <div>
-          <h1 className="text-6xl mb-4">Projects</h1>
-          <p className="">
-            Check out some of my projects below. For more, visit my{" "}
-            <Link
-              href={"https://github.com/duduMiyake"}
-              className="underline underline-offset-4 font-semibold hover:decoration-purple-400 hover:text-purple-400"
-            >
-              Github
-            </Link>
-          </p>
+          <div className="mt-10 mx-6">
+            <h1 className="text-5xl md:text-6xl mb-3 md:mb-0">
+              Projects
+            </h1>
+            <p className="mb-10 md:mb-0">
+              Check out some of my projects below. For more, visit my{" "}
+              <Link
+                href={"https://github.com/duduMiyake"}
+                className="underline underline-offset-4 font-semibold hover:decoration-purple-400 hover:text-purple-400"
+              >
+                Github
+              </Link>
+            </p>
+          </div>
         </div>
         {projects.map((project, index) => {
           return (
@@ -48,7 +51,9 @@ export default function HomeProjects() {
           );
         })}
       </div>
-      <span className="place-self-center text-lg underline underline-offset-4 font-semibold hover:decoration-purple-400 hover:text-purple-400"><Link href={"#Top"}>Go back to top</Link></span>
+      <span className="mt-8 md:mt-0 place-self-center text-lg underline underline-offset-4 font-semibold hover:decoration-purple-400 hover:text-purple-400">
+        <Link href={"#Top"}>Go back to top</Link>
+      </span>
     </div>
   );
 }
