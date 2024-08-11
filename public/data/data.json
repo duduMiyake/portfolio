@@ -1,6 +1,11 @@
 {
     "projects_main_page": [
         {
+          "src": "/projects-image/stock-portfolio.jpg",
+          "alt": "Stock portfolio",
+          "description": "Development of a software for a stock portfolio manager made using a stock market API and Clojure to learn the language and also functional programming"
+        },
+        {
             "src": "/projects-image/Garras-do-destino.png",
             "alt": "Claws of destiny",
             "description": "Project developed in Unity using C#, in collaboration with two other team members, for an educational game that teaches about various Brazilian biomes."
@@ -9,24 +14,11 @@
             "src": "/projects-image/spotify-clone.jpg",
             "alt": "Spotify clone",
             "description": "Front-end project to learn some concepts of HTML, CSS and Javascript"
-        },
-        {
-            "src": "/projects-image/stock-portfolio.jpg",
-            "alt": "Stock portfolio",
-            "description": "Development of a software for a stock portfolio manager made using a stock market API and Clojure to learn the language and also functional programming"
         }
     ],
 
     "projects_secondary_page": [
-        {
-            "src": "/projects-image/Garras-do-destino.png",
-            "link": "https://github.com/LeoMarques1206/unity-biomas",
-            "title": "Claws of destiny",
-            "description": "Project developed in Unity using C#, in collaboration with two other team members, for an educational game that teaches about various Brazilian biomes.",
-            "tech": "Unity, C#, Github, Github Desktop",
-            "alt": "Claws of destiny Project",
-            "hasPage": true
-        },   
+        
         {
             "src": "/projects-image/spotify-clone.jpg",
             "link": "https://github.com/duduMiyake/spotify_Clone_Frontend",
@@ -46,15 +38,6 @@
             "hasPage": false
           },
           {
-            "src": "/projects-image/app-personal-budget.jpeg",
-            "link": "https://github.com/duduMiyake/app_Personal_Budget",
-            "title": "Personal budget App",
-            "description": "A personal budgeting software project to test knowledge in Object-Oriented Programming (OOP). This project consolidated understanding and application of OOP principles.",
-            "tech": "HTML, CSS, Bootstrap",
-            "alt": "App Personal Budget Project",
-            "hasPage": false
-          },
-          {
             "src": "/projects-image/stock-portfolio.jpg",
             "link": "https://github.com/duduMiyake/stock_Portfolio",
             "title": "Stock portfolio",
@@ -65,12 +48,30 @@
             "hasPage": false
           },
           {
+            "src": "/projects-image/Garras-do-destino.png",
+            "link": "https://github.com/LeoMarques1206/unity-biomas",
+            "title": "Claws of destiny",
+            "description": "Project developed in Unity using C#, in collaboration with two other team members, for an educational game that teaches about various Brazilian biomes.",
+            "tech": "Unity, C#, Github, Github Desktop",
+            "alt": "Claws of destiny Project",
+            "hasPage": true
+          },   
+          {
             "src": "/projects-image/lexical-sintaxy.png",
             "link": "https://github.com/duduMiyake/lexical_Syntactic_Analyzer",
             "title": "Lexical Syntatic Analyser",
             "description": "This project involves creating a Lexical and Syntactic Analyzer to process input strings into tokens and validate their syntactic structure based on a defined grammar. Key learnings include understanding lexical and syntactic analysis, implementing token classification, constructing parse trees, and handling errors gracefully",
             "tech": "Python",
             "alt": "Lexical Syntatic Analyser Project",
+            "hasPage": false
+          },
+          {
+            "src": "/projects-image/app-personal-budget.jpeg",
+            "link": "https://github.com/duduMiyake/app_Personal_Budget",
+            "title": "Personal budget App",
+            "description": "A personal budgeting software project to test knowledge in Object-Oriented Programming (OOP). This project consolidated understanding and application of OOP principles.",
+            "tech": "HTML, CSS, Bootstrap",
+            "alt": "App Personal Budget Project",
             "hasPage": false
           }
     ]
