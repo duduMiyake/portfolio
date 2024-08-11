@@ -25,8 +25,9 @@ const Contact = () => {
             </p>
           </div>
         </div>
+        <div className="md:hidden mx-8 text-sm opacity-75">Developed using Next.js, React.js and deployed with Vercel</div>
       </div>
-      <div className="content-center opacity-75">
+      <div className="hidden md:flex items-center opacity-75">
         <h1>Developed using Next.js, React.js and deployed with Vercel</h1>
       </div>
     </div>

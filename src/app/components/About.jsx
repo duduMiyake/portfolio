@@ -14,7 +14,7 @@ const About = () => {
                         <div>
                             <p className="text-lg md:text-base">
                                 I`m a Computer Science student at the Universidade de Fortaleza (UNIFOR) and a Front-End Developer Intern. 
-                                My passion for technology and software development drives me to continuously learn and improve my skills, right now i develop most using react.js and next.js. <br />
+                                My passion for technology and software development drives me to continuously learn and improve my skills, right now i develop most using <span className="underline underline-offset-4">React.js</span> and <span className="underline underline-offset-4">Next.js</span>. <br /><br />
                                 When I’m not coding, you’ll find me exploring the latest tech trends, I’m always eager to connect with like-minded professionals and explore new things in the tech world.<br /><br />
                                 Feel free to explore my portfolio to see some of the projects I’ve worked on, and don’t hesitate to reach out if you’d like to connect!
                             </p>

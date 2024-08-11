@@ -3,20 +3,24 @@
 import { useState } from "react";
 
 const Experience = () => {
-  const [title, setTitle] = useState("");
-  const [date, setDate] = useState("");
-  const [description, setDescription] = useState("");
-  const [visible, setVisible] = useState("opacity-0");
-  const [active, setActive] = useState({ index: "nothing", class: "" });
+  const [title, setTitle] = useState("Software Developer Intern");
+  const [date, setDate] = useState("May (2024) - PRESENT");
+  const [description, setDescription] = useState("Developed, tested, and corrected front-end functionalities, with a focus on React.js and Next.js. Also utilized and learned to work with technologies such as Git, Jenkins, Keycloak, and Redmine.");
+  const [visible, setVisible] = useState("opacity-100");
+  const [active, setActive] = useState({ index: 0, class: "bg-stone-800 -translate-y-1 scale-110" });
 
   const experiences = [
     {
+      from: "TJCE",
+      from_details: " (Court of Justice of Ceará)",
       title: "Software Developer Intern",
-      date: "May (2024) - PRESENT",
+      date: "May (2024) - NOW",
       description:
         "Developed, tested, and corrected front-end functionalities, with a focus on React.js and Next.js. Also utilized and learned to work with technologies such as Git, Jenkins, Keycloak, and Redmine.",
     },
     {
+      from: "UNIFOR",
+      from_details: "",
       title: "Undergraduate Teaching Assistant - Data Structure and Algorithm",
       date: "Feb (2023) - Dec (2023)",
       description:
@@ -32,6 +36,7 @@ const Experience = () => {
         class: "",
       }));
     } else {
+      console.log(index)
       setActive((prevState) => ({
         index: index,
         class: "bg-stone-800 -translate-y-1 scale-110",
@@ -63,7 +68,8 @@ const Experience = () => {
                 onClick={() => handleDescription(index)}
                 className={`${itemClass} py-3 px-4 my-2 ease-in-out rounded-md hover:bg-stone-800 hover:-translate-y-1 hover:scale-110 duration-300`}
               >
-                <span className="mr-4">{experience.title}</span>
+                <h1 className="text-2xl">{experience.from}<span className="">{experience.from_details}</span></h1>
+                <h1 className="opacity-75 underline-offset-4 underline">{experience.title}</h1>
                 <span className="text-sm opacity-75">{experience.date}</span>
               </li>
             );
@@ -74,7 +80,7 @@ const Experience = () => {
           {experiences.map((experience, index) => {
             return (
               <li key={index} className={`py-3 px-4 mb-12 ease-in-out rounded-md`}>
-                <p className="text-2xl mr-4">{experience.title}</p>
+                <p className="text-2xl underline underline-offset-2">{experience.title}</p>
                 <p className="text-base opacity-75">{experience.date}</p>
                 <p className="text-lg leading-relaxed mt-4 font-medium">{experience.description}</p>
               </li>

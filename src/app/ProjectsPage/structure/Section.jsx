@@ -17,8 +17,8 @@ const Section = ({
   return (
     <>
       <RevealWrapper
-        viewFactor={0.6}
-        duration={800}
+        viewFactor={0.5}
+        duration={600}
         origin="bottom"
         distance="20%"
       >
