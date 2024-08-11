@@ -94,7 +94,7 @@ const Skills = () => {
                 <div className={`absolute left-1/2 transform -translate-x-1/2 flex flex-col self-center w-11/12 h-auto ${about.background} rounded-lg p-10 shadow-lg`}>
                     <h1 className="text-6xl">Skills</h1><br />
                     <h2 className="text-3xl md:place-self-center">Tech Stack</h2><br />
-                    <p className="place-self-center text-xl md:text-base">Here are the technologies I've worked with, both in my current projects and past experiences:</p><br />
+                    <p className="place-self-center text-xl md:text-base">Here are the technologies I`ve worked with, both in my current projects and past experiences:</p><br />
                     <div className="grid grid-cols-4 md:grid-cols-7 gap-6 md:gap-4 justify-items-center mt-12">
                         {skills_row1.map((skill, index) => (
                             <Image key={index} src={skill.src} alt={skill.alt} width={60} height={60}/>
