@@ -53,7 +53,18 @@ const Section = ({
             <h1 className="text-4xl">{title}</h1>
             {info && <h2 className="font-bold text-sm mt-2">{info}</h2>}
             <p className="text-lg mb-4 mt-6">{description}</p>
-            <p className="mb-4 font-semibold">Stack: {tech}</p>
+            <div className="mb-4 font-semibold">
+              Stack:
+              <div className="flex flex-wrap">
+                {tech.map((tech, index) => {
+                  return (
+                      <div key={index} className="bg-green-300 rounded-full py-1 px-3 cursor-default hover:bg-green-500 hover:-translate-y-1 duration-200 ease-in-out mr-2 mt-2">
+                      {tech}
+                      </div>
+                  )
+                })}
+              </div>
+            </div>
             <span className="text-lg place-self-center underline hover:decoration-purple-400 hover:text-purple-400">
               <Link href={link}>See project repository</Link>
             </span>

@@ -82,13 +82,13 @@ const Navbar = () => {
       </Link>
       
       <div>
-        <ul className="flex justify-end space-x-10 mr-6">
+        <ul className="flex justify-end mr-1">
           {pathname === "/" ? (
-            <li className="underline underline-offset-8 opacity-60 transition">
+            <li className="underline underline-offset-8 opacity-60 transition mr-3">
               <Link href={"/"}>Home</Link>
             </li>
           ) : (
-            <li className="hover:opacity-60 transition">
+            <li className="hover:opacity-60 transition mr-3">
               <Link href={"/"}>Home</Link>
             </li>
           )}

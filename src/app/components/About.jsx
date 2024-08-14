@@ -22,8 +22,10 @@ const About = () => {
                                 <h1 className="mt-2 font-bold">Education</h1>
                                 <ul>
                                     <li className="list-disc list-inside font-semibold">
-                                        Bachelor&apos;s Degree in Computer Science, Universidade de Fortaleza (UNIFOR) - 2021 to Present
+                                        Bachelor&apos;s Degree in Computer Science, Universidade de Fortaleza (UNIFOR) 
+                                        <span className="opacity-70 ml-4">2021 - Now</span>
                                     </li>
+                                    
                                 </ul>
                             </div>
                         </div>
