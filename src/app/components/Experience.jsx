@@ -5,7 +5,7 @@ import { useState } from "react";
 const Experience = () => {
   const [title, setTitle] = useState("Software Developer Intern");
   const [date, setDate] = useState("May (2024) - PRESENT");
-  const [description, setDescription] = useState("Developed, tested, and corrected front-end functionalities, with a focus on React.js and Next.js. Also utilized and learned to work with technologies such as Git, Jenkins, Keycloak, and Redmine.");
+  const [description, setDescription] = useState("Worked on developing and testing projects that were migrating from an old pattern of the company to a new one. \n Working with Ruby, Ruby on Rails, Rspec (for unit testing) and Git with Gitlab for versioning in a SCRUM enviroment.");
   const [visible, setVisible] = useState("opacity-100");
   const [active, setActive] = useState({ index: 0, class: "bg-stone-800 -translate-y-1 scale-110" });
 
