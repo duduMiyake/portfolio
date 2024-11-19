@@ -14,15 +14,15 @@ const Experience = () => {
       from: "TJCE",
       from_details: " (Court of Justice of Ceará)",
       title: "Software Developer Intern",
-      date: "May (2024) - NOW",
+      date: "May (2024) - NOW • 7 mos",
       description:
-        "Developed, tested, and corrected front-end functionalities, with a focus on React.js and Next.js. Also utilized and learned to work with technologies such as Git, Jenkins, Keycloak, and Redmine.",
+        "Worked on developing and testing projects that were migrating from an old pattern of the company to a new one. \n Working with Ruby, Ruby on Rails, Rspec (for unit testing) and Git with Gitlab for versioning in a SCRUM enviroment.",
     },
     {
       from: "UNIFOR",
       from_details: "",
       title: "Undergraduate Teaching Assistant - Data Structure and Algorithm",
-      date: "Feb (2023) - Dec (2023)",
+      date: "Feb (2023) - Dec (2023) • 11 mos",
       description:
         "Assisted the professor in preparing and conducting lectures and laboratory sessions for the Data Structures course. I provided support to students with questions and difficulties related to the course content, including fundamental algorithms such as lists, queues, stacks, and trees. I also helped proctor exams in the classroom. This role helped me develop communication, organization, and leadership skills, and it deepened my knowledge of Data Structures.",
     },
@@ -89,7 +89,7 @@ const Experience = () => {
         </ul>
       </div>
       <div className="hidden md:flex md:basis-2/4 justify-center">
-        <div className="w-8/12 h-fit">
+        <div className="w-10/12 h-fit">
           <div className={`ease-linear duration-300 ${visible}`}>
             <h1 className="text-xl font-bold">{title}</h1>
             <h2 className="text-sm font-bold opacity-75">{date}</h2>
